@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { FormFieldErrorComponent } from './components/form-field-error/form-field-error.component';
+import { ServeErrorMessagesComponent } from './components/serve-error-messages/serve-error-messages.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { FormFieldErrorComponent } from './components/form-field-error/form-fiel
     BreadCrumbComponent,
     PageHeaderComponent,
     FormFieldErrorComponent,
+    ServeErrorMessagesComponent,
 
     // Shared modules
     ReactiveFormsModule,
@@ -26,7 +28,8 @@ import { FormFieldErrorComponent } from './components/form-field-error/form-fiel
   declarations: [
     BreadCrumbComponent,
     PageHeaderComponent,
-    FormFieldErrorComponent
+    FormFieldErrorComponent,
+    ServeErrorMessagesComponent
   ]
 })
 export class SharedModule { }

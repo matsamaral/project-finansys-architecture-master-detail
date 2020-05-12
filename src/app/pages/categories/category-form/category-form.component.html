@@ -28,12 +28,7 @@
     </div>
   </div>
 
-  <div class="alert alert-danger mt-4" *ngIf="serverErrorMessages?.length">
-    <strong>Erro no servidor:</strong>
-    <ul>
-      <li *ngFor="let error of serverErrorMessages">{{error}}</li>
-    </ul>
-  </div>
+  <app-serve-error-messages [server-error-messages]="serverErrorMessages"></app-serve-error-messages>
 
   <button [disabled]="submittingForm || resourceForm.invalid" type="submit" class="btn btn-primary btn-lg float-right mt-3">Salvar</button>
 
